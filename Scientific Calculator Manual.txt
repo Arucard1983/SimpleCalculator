@@ -1,0 +1,37 @@
+Scientific Calculator ReadMe
+----------------------------------------------
+
+Welcome to the Scientific Calculator application!
+This program enables to do some numerical evaluations with built-in functions and some enhancements...
+
+- The Calculator has 16 built-in functions, support memory variables, and it's a demoscene of a simple, stack based, algebraic parser.
+- The user just need to input from keyboard or from the buttons above, and display the results.
+
+Basic Syntax:
+The user can evaluate the following algebraic expressions easilly:
+2+4
+sqrt(16)*(cos(1)*4)
+cos(sin(tan(1)))
+....
+
+Using internal registers:
+Multiple sentences should be aggregated with the colon ":" symbol
+2+5:1+9
+- But it will return only the contents of the last sentence, which is "10"
+
+To avoid data loss, it's better to define some variables, and use the "DspVal" to display the results.
+- Then change the last example to:
+a=2+5:b=1+9
+And use the "DspVar" to display the values.
+
+You can add recall on display the current variable contents using the "DspVar=", which will prompt:
+a=7,b=10
+And add another sentences.
+
+Defining variables and constants:
+It is possible to define constants and variables using the adequate keys...
+ab1=1 (A constant called "ab1")
+ab2?=2 (A variable called "ab2")
+You can change variables on runtime, but constants contents will give an error.
+a=0:a=a+1 (Error)
+a?=0:a=a+1 (OK)
